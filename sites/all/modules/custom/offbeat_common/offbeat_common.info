@@ -1,0 +1,7 @@
+name = Offbeat Common
+description = Provides custom functionality to the offbeatbrewing website.
+version = "7.x-1.0"
+core = "7.x"
+package = "Offbeat Brewing Company"
+
+

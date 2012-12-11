@@ -1,0 +1,599 @@
+/**
+ * @file
+ * Positioning for a fixed-width, desktop-centric layout.
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,  hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0 none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  background: url("../../images/bg.jpg") repeat scroll center top #5A3C25;
+  color: #666666;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  min-width: 1020px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+ a {
+  color: #C8594C;
+  font-weight: 400;
+  text-decoration: none;
+  height: 100%;
+  transition: color 0.25s linear 0s;
+}
+
+#feat_row a {
+  color: #C8594C;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#feat_row a:hover {
+  color: #C8594C;
+  text-decoration: underline;
+}
+
+.more {
+  float: right;
+  margin-right: 10px;
+}
+
+p {
+  display: block;
+  margin-bottom: 15px;
+}
+
+#skip-link {margin: 0;}
+
+strong {
+  color: #555555;
+  font-weight: 600;
+}
+
+h1 {
+  color: #222222;
+  font-family: 'Amatic SC',cursive;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  padding-bottom: 15px;
+}
+
+/*
+* Content Dividers
+*/
+.hr640 {
+  background: url("../../images/hr640.png") no-repeat scroll center center transparent;
+  clear: left;
+  height: 5px;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 640px;
+}
+
+.hr280 {
+  background: url("../../images/hr280.png") no-repeat scroll center center transparent;
+  clear: right;
+  height: 5px;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 280px;
+}
+
+/* Mailing List */
+
+#mc_embed_signup input.email {
+  float: left;
+  margin: 0;
+  min-width: 175px;
+  padding: 8px 0;
+  text-indent: 5px;
+  width: 175px;
+}
+
+#mc_embed_signup input.button {
+  float: left;
+  margin: 0 0 0 5px;
+  min-width: 90px;
+  width: 90px;
+}
+
+#mc_embed_signup .button {
+  background-color: #AAAAAA;
+  border: 0 none;
+  border-radius: 4px 4px 4px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+}
+
+/*Contact Form*/
+
+/*node-21 is the contact form*/
+
+#webform-client-form-21 {
+    background: url("../../images/form_bg.gif") no-repeat scroll center top transparent;
+    height: 440px;
+    margin: 0;
+    width: 640px;
+}
+
+.webform-component input, .form-textarea-wrapper textarea {
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 1px #BBBBBB inset, 0 0 1px #CCCCCC inset;
+    color: #777777;
+    font: 14px/1.2 Calibri,Arial,sans-serif;
+    height: 22px;
+    outline: medium none;
+    padding: 5px 8px;
+    resize: none;
+    width: 200px;
+}
+
+.form-textarea-wrapper textarea {
+    height: 150px;
+    overflow: auto;
+    vertical-align: top;
+    width: 450px;
+}
+
+.node-21 {
+  margin-left: 20px;
+}
+
+.node-21 .form-submit {
+  background: url("../../images/sprite.png") no-repeat scroll 0 -70px transparent;
+  border: medium none;
+  color: #65717D;
+  cursor: pointer;
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  margin: 10px 0 0 120px;
+  padding: 0 10px 0 15px;
+  position: relative;
+  text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.form-actions input[type="submit"], .form-actions input[type="button"] {
+    cursor: pointer;
+    margin-left: 120px;
+    width: 120px;
+}
+
+.form-actions .button {
+    background: url("../../images/sprite.png") no-repeat scroll 0 -70px transparent;
+    border: medium none;
+    color: #65717D;
+    cursor: pointer;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    margin: 10px 0 0 120px;
+    padding: 0 10px 0 15px;
+    position: relative;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.form-select {
+    height: 30px;
+    line-height: 30px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.node-21 .form-select {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 186px;
+    padding: 0 15px 0 10px;
+    position: relative;
+}
+
+.node-21 .form-select option {
+    height: 30px;
+    line-height: 30px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.form-select li {
+    background: url("../../images/sprite.png") repeat scroll -4px 0 transparent;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 0 10px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.node-21 .form-item {
+  padding: 7px 0;
+}
+
+.node-21 label {
+  display: inline-block;
+  margin-left: -72px;
+  padding-right: 8px;
+  text-align: right;
+  width: 180px;
+}
+
+.file-media-original {float: right;}
+
+.press_title {
+  color: #666666;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.press_date {
+  color: #CCCCCC;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+#page {width: 100%;}
+
+#main #sidebar {
+  display: block;
+  float: left;
+  margin: 0 0 0 30px;
+  width: 280px;
+}
+
+#page,
+.region-bottom {
+  /* If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. */
+  /*margin-left: auto;
+  margin-right: auto;*/
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+#main #left {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  width: 640px;
+}
+
+#main #slider {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    width: 640px;
+    position: relative;
+}
+
+.nivoSlider {
+  overflow: hidden;
+}
+
+#header {
+  background: url("../../images/header_bg.jpg") no-repeat scroll center top transparent;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  width: 1140px;
+}
+
+#block-block-5 {
+  height: 40px;
+  position: absolute;
+  right: 65px;
+  top: 121px;
+  width: 780px;
+  z-index: 20;
+}
+
+#nav { position:absolute; width:780px; height:40px; z-index:20; }
+
+#nav ul { list-style-type:none; }
+#nav ul li { float:left; position:relative; } 
+#nav ul li.active { color:#999; display:block; text-decoration:none; font-family: 'Amatic SC', cursive; font-weight:400; font-size:34px; letter-spacing:-1px; margin-right:40px; }
+#nav ul li a { color:#222; display:block; text-decoration:none; font-family: 'Amatic SC', cursive; font-weight:400; font-size:34px; letter-spacing:-1px; margin-right:40px; }
+    
+#nav ul li a:hover { color:#c8594c; }   
+#nav ul li ul { display:none; }
+#nav ul li:hover ul { display:block; position:absolute; left:-20px; top:32px; background:url(../../images/drop_bg.jpg) repeat top left; background-color:#e9e3ca; padding:15px 20px; -moz-border-radius: 6px; border-radius: 6px; box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.2); }
+
+#nav ul li:hover ul.beer li a, #nav ul li:hover ul.brewery li a, #nav ul li:hover ul.media li a { margin-right:0 !important; display: block; list-style-type:none; color:#555; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size:14px; font-weight:400; text-shadow: 1px 1px #ffffcc; padding:0; }
+
+#nav ul li:hover ul.beer li a { width:190px; }
+#nav ul li:hover ul.brewery li a { width:100px; }
+#nav ul li:hover ul.media li a { width:100px; }
+
+#nav ul li:hover ul li.cat, #nav ul li:hover ul li.cat1 { font-weight:800; text-transform:uppercase; }
+#nav ul li:hover ul li.cat { padding-top:15px; }
+
+#nav ul li ul.beer li a:hover, #nav ul li:hover ul.brewery li a:hover, #nav ul li:hover ul.media li a:hover { color:#c8594c; }
+
+.nav-arrow { background:url(../../images/nav-arrow.png) no-repeat center center; display:block; width:12px; height:10px; position:absolute; top:7px; right:26px; }
+
+.feat_box ul {
+    list-style-position: inside;
+}
+
+.feat_box ul {
+    list-style-position: inside;
+}
+
+.feat_box ul li {
+  list-style: disc inside none;
+  margin-left: 0;
+  padding-left: 6px;
+}
+
+#block-superfish-1 ul li a {
+  color: #222222;
+  display: block;
+  font-family: 'Amatic SC',cursive;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+#block-superfish-1 ul li.active {
+  color:#999;
+  display:block;
+  text-decoration:none;
+  font-family: 'Amatic SC', cursive;
+  font-weight:400;
+  font-size:34px;
+  letter-spacing:-1px;
+  margin-right:40px;
+}
+
+#superfish-1 ul li {background: none;}
+
+h2 {
+  color: #666666;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  line-height: 0;
+  margin: 0;
+}
+
+#hops {
+  background: url("../../images/hops.jpg") no-repeat scroll left top transparent;
+  height: 680px;
+  left: -579px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  width: 620px;
+}
+
+#ipa {
+  background: url("../../images/IPA.jpg") no-repeat scroll right top transparent;
+  height: 525px;
+  margin: 0 auto;
+  position: absolute;
+  right: -360px;
+  top: 0;
+  width: 420px;
+  z-index: -1;
+}
+
+#social {
+  position: absolute;
+  right: 72px;
+  top: 12px;
+}
+
+/*
+ * Containers for grid items and flow items.
+ */
+
+#footer:before, #footer:after {
+  content: "";
+  display: table;
+}
+
+#footer:after {
+  clear: both;
+}
+
+#header {
+  background: url("../../images/header_bg.jpg") no-repeat scroll center top transparent;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  width: 1140px;
+}
+
+/*
+ * Navigation bar
+ */
+
+
+#main {
+  margin: 0 auto;
+  min-width: 1020px;
+  position: relative;
+  width: 1140px;
+}
+
+#main #content {
+  background: url("../../images/spill.jpg") no-repeat scroll right top #FFFFFF;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 4px;
+  width: 1020px;
+}
+
+#main .quote {
+  color: #999999;
+  font-family: inherit;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+#navigation {
+  position: absolute;
+  top: 0; /* Move the navbar up inside #main's padding. */
+  height: 3em;
+  width: 960px;
+}
+
+#logo {
+  height: 150px;
+  position: absolute;
+  top: 5px;
+  width: 160px;
+  padding-left: 107px;
+}
+
+#copyright {
+  background: url("../../images/copyright.png") no-repeat scroll center top transparent;
+  height: 30px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+#cap {
+  background: url("../../images/footer.png") no-repeat scroll center top transparent;
+  height: 80px;
+  margin: 0 auto;
+  width: 1020px;
+}
+
+#footer {
+  color: #876C5B;
+  margin: 10px auto 0;
+  position: relative;
+  width: 1080px;
+}
+
+/*
+ * The layout when there is only one sidebar, the left one.
+ */
+
+
+.sidebar-first .region-sidebar-first {
+  /* Span 1 column, starting in 1st column from left. */
+  float: left;
+  width: 176px;
+  margin-left: 0px;
+  margin-right: -196px;
+}
+
+
+/*
+ * The layout when there are two sidebars.
+ */
+
+.two-sidebars #content {
+  /* Span 3 columns, starting in 2nd column from left. */
+  float: left;
+  width: 568px;
+  margin-left: 196px;
+  margin-right: -784px;
+}
+
+.two-sidebars .region-sidebar-first {
+  /* Span 1 column, starting in 1st column from left. */
+  width: 176px;
+  margin-left: 0px;
+  margin-right: -196px;
+}
+
+.two-sidebars .region-sidebar-second {
+  /* Span 1 column, starting in 5th column from left. */
+  float: left;
+  width: 176px;
+  margin-left: 784px;
+  margin-right: -980px;
+}
+
+#feat_row {
+  background: url("../../images/feature_box_bg.jpg") no-repeat scroll center top transparent;
+  height: 360px;
+  margin: 0 auto;
+  position: relative;
+  width: 1140px;
+
+}
+
+.feat_box {
+  margin: 20px;
+}
+
+div.date {
+  color: #C8594C;
+  font-family: 'Alfa Slab One',cursive;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+div.date {
+  background: url("../../images/hr_vert.png") no-repeat scroll right top transparent;
+  float: left;
+  margin: auto 30px auto 0;
+  padding: 40px 0;
+  width: 190px;
+}
+
+.one-of-three {
+  border: medium none;
+  float: left;
+  margin: 90px 0 0 65px;
+  width: 320px;
+}
+
+.two-of-three {
+  float: left;
+  margin: 90px 0 0 30px;
+  width: 320px;
+}
+
+.three-of-three {
+  float: left;
+  margin: 90px 0 0 30px;
+  width: 318px;
+}
+
+/*Commerce Stuff*/
+
+#block-commerce-cart-cart {margin-bottom: 20px;}

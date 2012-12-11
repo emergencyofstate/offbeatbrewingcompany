@@ -1,0 +1,8 @@
+name = Offbeat Meta Tags
+description = Provides my custom Metatags.
+core = 7.x
+version = 7.x-1.x
+ 
+dependencies[] = metatag
+ 
+files[] = offbeat_metatags.metatag.inc

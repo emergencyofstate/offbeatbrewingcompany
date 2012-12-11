@@ -1,0 +1,29 @@
+<?php
+
+/**
+* Implements hook_entity_info_alter().
+*/
+//function offbeat_entity_info_alter(&$entity_info) {
+//  $entity_info['node']['view modes']['frontpage_teaser'] = array(
+//    'label' => t('Frontpage Events Teaser'),
+//    'custom settings' => TRUE,
+//  );
+//} 
+
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function offbeat_common_field_formatter_info() {
+  return array(
+    'offbeat_date_formatter' => array( //Machine name of the formatter
+    'label' => t('Offbeat Google Web Font Date'),
+    'field types' => array('date'), //This will only be available to date fields
+      'settings'  => array( //Array of the settings we'll create
+      'pic_size' => 'small', //give a default value for when the form is first loaded
+      'tooltip' => 'Formats the Events date', //ditto
+      ),
+    ),
+  );
+}
+
