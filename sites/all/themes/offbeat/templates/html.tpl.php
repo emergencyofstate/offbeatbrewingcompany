@@ -84,8 +84,8 @@
   <meta http-equiv="cleartype" content="on">
 
   <?php print $styles; ?>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
   <?php print $scripts; ?>
   <?php if ($add_respond_js): ?>
