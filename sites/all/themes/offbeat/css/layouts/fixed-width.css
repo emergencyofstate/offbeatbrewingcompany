@@ -272,6 +272,13 @@ h1 {
   width: 280px;
 }
 
+.sf-menu a {
+    display: block;
+    position: relative;
+    font-weight:300;
+    color:#666;
+}
+
 #superfish-1 .active {
   background: url("../../images/crossed.png") no-repeat scroll center top transparent;
 }
