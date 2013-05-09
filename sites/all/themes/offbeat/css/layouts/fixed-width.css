@@ -272,6 +272,21 @@ h1 {
   width: 280px;
 }
 
+#superfish-1 .active {
+  background: url("../../images/crossed.png") no-repeat scroll center top transparent;
+}
+
+#superfish-2 .active {
+  background: url("../../images/crossed.png") no-repeat scroll center top transparent;
+}
+
+#sidebar .cat {
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
 #page,
 .region-bottom {
   /* If you want to make the page a fixed width and centered in the viewport,
