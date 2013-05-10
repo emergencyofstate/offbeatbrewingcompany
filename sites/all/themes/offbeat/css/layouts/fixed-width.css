@@ -18,9 +18,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 body {
-  background: url("../../images/bg.jpg") repeat scroll center top #5A3C25;
+  background: url('../../images/bg.jpg') repeat scroll center top #5A3C25;
   color: #666666;
-  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  font-family: 'Source Sans Pro',Arial,Helvetica,sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 21px;
@@ -29,12 +29,17 @@ body {
   margin: 0;
 }
 
- a {
+a {
   color: #C8594C;
   font-weight: 400;
   text-decoration: none;
   height: 100%;
   transition: color 0.25s linear 0s;
+}
+
+a:hover { 
+	color:#c8594c; 
+	text-decoration:underline; 
 }
 
 #feat_row a {
@@ -50,12 +55,27 @@ body {
 
 .more {
   float: right;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
 }
+
+.more:after {
+	content: url('../../images/more_arrow.png');
+}
+	
 
 p {
   display: block;
   margin-bottom: 15px;
+}
+
+.imgR { 
+	float:right; 
+	margin:10px 0 10px 20px; 
+}
+
+.imgL { 
+	float:left; 
+	margin:10px 20px 10px 0; 
 }
 
 #skip-link {margin: 0;}
@@ -71,7 +91,37 @@ h1 {
   font-size: 34px;
   font-weight: 400;
   letter-spacing: -1px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: #222222;
+  font-family: 'Special Elite', cursive;
+  font-size: 16px;
+  font-weight: 400;
   padding-bottom: 15px;
+  line-height: 0;
+  margin: 0;
+}
+
+h3 {
+  color: #222222;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  color: #666666;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -83,7 +133,7 @@ h1 {
   height: 5px;
   margin-bottom: 20px;
   padding: 0;
-  width: 640px;
+  width: 630px;
 }
 
 .hr280 {
@@ -92,7 +142,7 @@ h1 {
   height: 5px;
   margin-bottom: 20px;
   padding: 0;
-  width: 280px;
+  width: 270px;
 }
 
 /* Mailing List */
@@ -100,28 +150,29 @@ h1 {
 #mc_embed_signup input.email {
   float: left;
   margin: 0;
-  min-width: 175px;
-  padding: 8px 0;
+  min-width: 165px;
+  padding: 6px 0;
   text-indent: 5px;
-  width: 175px;
+  width: 165px;
 }
 
 #mc_embed_signup input.button {
   float: left;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 8px;
   min-width: 90px;
   width: 90px;
 }
 
 #mc_embed_signup .button {
-  background-color: #AAAAAA;
+  background-color: #C8594C;
   border: 0 none;
   border-radius: 4px 4px 4px 4px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 13px;
+  text-transform:uppercase;
+  font-weight: 700;
   height: 32px;
   line-height: 32px;
   margin: 0 5px 10px 0;
@@ -268,30 +319,39 @@ h1 {
 #main #sidebar {
   display: block;
   float: left;
-  margin: 0 0 0 30px;
-  width: 280px;
+  margin: 0 0 0 40px;
+  width: 270px;
 }
 
-.sf-menu a {
-    display: block;
-    position: relative;
-    font-weight:300;
-    color:#666;
-}
-
-#superfish-3 .active {
-  background: url("../../images/crossed.png") no-repeat scroll center top transparent;
-}
-
-#superfish-2 .active {
-  background: url("../../images/crossed.png") no-repeat scroll center top transparent;
+.sf-menu ul {
+    padding-bottom:10px;
 }
 
 #sidebar .cat {
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
+	background: url('../../images/sidebar_category.png') no-repeat left top transparent;
+	width:270px;
+	display:block;
+	padding:4px 14px;
+	margin-bottom:4px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#ffffff;
+}
+
+#superfish-2 .active {
+  background: url('../../images/crossed.png') no-repeat left top transparent;
+  font-weight:300;
+  color:#666;
+}
+
+#superfish-3 .active {
+  background: url('../../images/crossed.png') no-repeat left top transparent;
+  font-weight:300;
+  color:#666;
+}
+
+a.active:hover {
+  text-decoration: none;
 }
 
 #page,
@@ -308,15 +368,15 @@ h1 {
 #main #left {
   display: block;
   float: left;
-  margin-left: 30px;
-  width: 640px;
+  margin-left: 40px;
+  width: 630px;
 }
 
 #main #slider {
     display: block;
     float: left;
-    margin-left: 30px;
-    width: 640px;
+    margin-left: 40px;
+    width: 630px;
     position: relative;
 }
 
@@ -352,7 +412,7 @@ h1 {
 #nav ul li ul { display:none; }
 #nav ul li:hover ul { display:block; position:absolute; left:-20px; top:32px; background:url(../../images/drop_bg.jpg) repeat top left; background-color:#e9e3ca; padding:15px 20px; -moz-border-radius: 6px; border-radius: 6px; box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.2); }
 
-#nav ul li:hover ul.beer li a, #nav ul li:hover ul.brewery li a, #nav ul li:hover ul.media li a { margin-right:0 !important; display: block; list-style-type:none; color:#555; font-family: 'Open Sans', Arial, Helvetica, sans-serif; font-size:14px; font-weight:400; text-shadow: 1px 1px #ffffcc; padding:0; }
+#nav ul li:hover ul.beer li a, #nav ul li:hover ul.brewery li a, #nav ul li:hover ul.media li a { margin-right:0 !important; display: block; list-style-type:none; color:#555; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-size:14px; font-weight:400; text-shadow: 1px 1px #ffffcc; padding:0; }
 
 #nav ul li:hover ul.beer li a { width:190px; }
 #nav ul li:hover ul.brewery li a { width:100px; }
@@ -403,16 +463,6 @@ h1 {
 
 #superfish-1 ul li {background: none;}
 
-h2 {
-  color: #666666;
-  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  padding-bottom: 10px;
-  line-height: 0;
-  margin: 0;
-}
-
 #hops {
   background: url("../../images/hops.jpg") no-repeat scroll left top transparent;
   height: 680px;
@@ -438,6 +488,39 @@ h2 {
   position: absolute;
   right: 72px;
   top: 12px;
+}
+
+#social img { 
+	float:left; 
+	display:block; 
+	width:70px; height:70px; 
+	margin-left:8px; 
+}
+
+#social img:hover { 
+	opacity:0.5; 
+	filter:alpha(opacity=40); 
+}
+
+#beerspecs {
+	  background: url("../../images/beer_specs.png") no-repeat scroll center top transparent;
+	  width:630px;
+	  height:70px;
+	  padding:0;
+	  margin: 0;
+	  display:block;
+}
+
+#beerspecs #abv {
+	float: left;
+	margin: 12px 0 0 20px;
+	width: 130px;
+}
+
+#beerspecs #pairings {
+	float: left;
+	margin: 12px 0 0 15px;
+	width: 450px;
 }
 
 /*
@@ -619,3 +702,15 @@ div.date {
 /*Commerce Stuff*/
 
 #block-commerce-cart-cart {margin-bottom: 20px;}
+
+
+/*Theme Overrides*/
+
+
+.item-list ul li {
+	margin:0 !important;
+}
+
+.item-list ul {
+	list-style:disc inside none !important;
+}
