@@ -1,5 +1,3 @@
-<?php print kpr($variables); ?>
-
 <?php 
 
 $url = $element['#items'][0]['url'];
