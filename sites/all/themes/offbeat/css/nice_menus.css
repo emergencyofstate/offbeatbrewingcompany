@@ -26,10 +26,23 @@ ul.nice-menu li {
   border-top: 0;
   float: left; /* LTR */
   background-color: #eee;
+  float:left; 
+  position:relative; 
 }
 
 ul.nice-menu a {
   padding: 0.3em 5px 0.3em 5px;
+}
+
+ul.nice-menu li a {
+ color:#222; 
+ display:block; 
+ text-decoration:none; 
+ font-family: 'Amatic SC', cursive; 
+ font-weight:400; 
+ font-size:34px; 
+ letter-spacing:-1px; 
+ margin-right:40px; 
 }
 
 ul.nice-menu ul {
@@ -40,9 +53,26 @@ ul.nice-menu ul {
   margin-right: 0; /* LTR */
 }
 
+ul.nice-menu li a:hover {
+ color:#c8594c;  
+}
+
+
 ul.nice-menu ul li {
   width: 12.5em;
 }
+
+ul.nice-menu ul li.active {
+  color:#999; 
+  display:block; 
+  ul.nice-menu-down ul text-decoration:none; 
+  ul.nice-menu-down ul font-family: 'Amatic SC', cursive; 
+  ul.nice-menu-down ul font-weight:400; 
+  ul.nice-menu-down ul font-size:34px; 
+  ul.nice-menu-down ul letter-spacing:-1px; 
+  ul.nice-menu-down ul margin-right:40px; 
+} ul.nice-menu-down ul
+ ul.nice-menu-down ul
 
 /******************************
  VERTICAL (left/right) menus
@@ -125,7 +155,16 @@ ul.nice-menu-down li li {
 }
 
 ul.nice-menu-down ul {
-  left: 0; /* LTR */
+  display:block; 
+  position:absolute; 
+  left:-20px; 
+  top:32px; 
+  background:url(../../images/drop_bg.jpg) repeat top left; 
+  background-color:#e9e3ca; 
+  padding:15px 20px; 
+  -moz-border-radius: 6px; 
+  border-radius: 6px; 
+  box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.2); 
 }
 
 ul.nice-menu-down ul li {
