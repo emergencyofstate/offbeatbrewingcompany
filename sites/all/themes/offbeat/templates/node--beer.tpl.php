@@ -4,6 +4,7 @@
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
+    hide($content['field_beer_image']);
   ?>
 
   <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
@@ -29,8 +30,18 @@
   
   <?php print '<h2>' . render($content['field_tags']) . '</h2>'; ?>
 
+  <?php if (isset($content[field_beer_image])) {
+    
+    print render($content[field_beer_image]);
+
+  }
+
+  ?>
+
   <?php print render($content['body']); ?>
 
+  <div class="clear"></div>
+  
   <div id="beerspecs">
     <div id="abv">
       <?php print '<strong>IBUs: </strong>' . $variables['field_beer_ibu'][0]['safe_value']; ?>
