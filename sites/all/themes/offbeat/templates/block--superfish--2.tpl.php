@@ -3,3 +3,5 @@
 <?php endif;?>
 <?php print render($content); ?>
 
+<div class="hr280"> </div>
+

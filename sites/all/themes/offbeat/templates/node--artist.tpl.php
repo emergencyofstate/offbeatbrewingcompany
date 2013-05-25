@@ -47,10 +47,6 @@
     <?php print render($content['field_artist_favorite_beer']); ?>
   <?php endif; ?>
 
-  <?php if (isset($content['field_artist_fun_fact']['#items'][0])): ?>
-    <?php print render($content['field_artist_fun_fact']); ?>
-  <?php endif; ?>
-
   <?php if (isset($content['field_artist_image']['#items'][0])): ?>
     <?php print render($content['field_artist_image']); ?>
   <?php endif; ?>

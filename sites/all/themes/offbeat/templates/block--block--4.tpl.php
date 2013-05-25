@@ -1,4 +1,5 @@
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
@@ -8,5 +9,3 @@
   <?php print $content; ?>
 
 </div><!-- /.block -->
-
-<div class="hr280"> </div>
