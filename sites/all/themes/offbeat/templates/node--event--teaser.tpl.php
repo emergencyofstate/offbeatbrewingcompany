@@ -1,4 +1,4 @@
-<div class="date"><?php print render($content['field_event_date']); ?></div>
+<div class="date"><?php print $variables['field_event_date']['und'][0]['value']; ?></div>
 
 <h2><?php print $title; ?></h2>
 
