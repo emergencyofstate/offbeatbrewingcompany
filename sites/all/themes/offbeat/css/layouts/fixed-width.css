@@ -68,11 +68,11 @@ p {
   margin-bottom: 15px;
 }
 
-#content ul {
+.field-items ul {
 	margin-bottom:15px;
 }
 
-#content ul li {
+.field-items ul li {
 	list-style:inside disc; 
 }
 
