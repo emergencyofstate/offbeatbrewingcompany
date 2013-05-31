@@ -30,9 +30,9 @@
   
   <?php print '<h2>' . render($content['field_tags']) . '</h2>'; ?>
 
-  <?php if (isset($content[field_beer_image])) {
+  <?php if (isset($content['field_beer_image']['und'][0]['uri'])) {
     
-    print render($content[field_beer_image]);
+    print render($content['field_beer_image']);
 
   }
 
