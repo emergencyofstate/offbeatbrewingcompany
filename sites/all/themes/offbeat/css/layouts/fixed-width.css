@@ -383,13 +383,16 @@ h4 {
 
 .sf-menu,
 .sf-menu * {
-  list-style: none;
+  list-style:none;
+  line-height:21px;
   margin-bottom:15px;
 }
+
 .sf-menu {
   /*line-height: 1.0;*/
   z-index: 497;
 }
+
 .sf-menu ul {
   /*
   left: 0;
@@ -407,19 +410,16 @@ h4 {
 */
 
 .sf-menu li {
-  /*float: left;
-  position: relative;
-  z-index: 498;*/ 
+  float:none;
   padding:0 0 0 6px;
   margin:0;
 }
 
-/*
 .sf-menu a {
-  display: block;
+  display: inline;
   position: relative;
 }
-*/
+
 
 .sf-menu li:hover,
 .sf-menu li.sfHover,
@@ -533,16 +533,11 @@ li.sfHover > a > .sf-sub-indicator {
 }
 
 
-#superfish-2 .active {
-    background: url("../../images/crossed.png") no-repeat scroll left top transparent;
+#superfish-2 .active, #superfish-3 .active, #superfish-4 .active {
+    background: url("../../images/crossed.png") no-repeat scroll transparent;
+	background-position:-5px 1px;
     color: #666666;
     font-weight: 300;
-}
-
-#superfish-3 .active {
-  background: url('../../images/crossed.png') no-repeat left top transparent;
-  font-weight:300;
-  color:#666;
 }
 
 a.active:hover {
