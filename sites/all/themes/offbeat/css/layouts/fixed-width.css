@@ -86,6 +86,10 @@ p {
   margin:10px 20px 10px 0; 
 }
 
+.img {
+	margin-bottom:10px;
+}
+
 #skip-link {margin: 0;}
 
 strong {
@@ -904,19 +908,16 @@ a.active:hover {
 }
 
 div.date {
-  color: #C8594C;
-  font-family: 'Alfa Slab One',cursive;
-  font-size: 32px;
+  color: #222222;
+  font-family: 'Special Elite', cursive;
+  font-size: 16px;
   font-weight: 400;
-  text-align:right;
 }
 
 div.date {
     /*background: url("/~offbeatb/sites/all/themes/offbeat/images/hr_vert.png") no-repeat scroll right top transparent;*/
     float: left;
     margin: auto 20px auto 0;
-    padding: 10px 0;
-    width: 100px;
 }
 
 .one-of-three {
