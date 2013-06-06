@@ -2,6 +2,8 @@
 
 <h2><?php print $title; ?></h2>
 
+<?php print render($content['field_event_location']); ?>
+
 <?php print render($content['body']); ?>
 
 <?php print render($content['field_food_truck']); ?>
