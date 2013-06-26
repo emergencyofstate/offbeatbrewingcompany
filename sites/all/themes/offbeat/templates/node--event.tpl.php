@@ -4,13 +4,12 @@
   $timestamp2 = strtotime($content['field_event_date']['#items'][0]['value2']);
   $start_date_left = format_date($timestamp1, 'offbeat_date_frontpage');
   $end_date_left = format_date($timestamp2, 'offbeat_date_frontpage');
-  //todo: need to put in another format below.
-  $start_date_right = format_date($timestamp1, 'offbeat_date_frontpage');
-  $end_date_right = format_date($timestamp2, 'offbeat_date_frontpage');
+  $start_date_right = format_date($timestamp1, 'offbeat_date_full');
+  $end_date_right = format_date($timestamp2, 'offbeat_date_full');
 
-  print '<div class="event-date">';
+  print '<div class="date-container"><div class="event-date">';
   print $start_date_left . '&#8211;' . $end_date_left;
-  print '</div>';
+  print '</div></div>';
 
   print '<div class="event-content">';
   print '<div class="event-title">' . $title . '</div><br />';
