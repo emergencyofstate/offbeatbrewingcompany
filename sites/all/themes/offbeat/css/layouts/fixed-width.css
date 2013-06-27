@@ -147,6 +147,16 @@ h4 {
   width: 630px;
 }
 
+
+.hr460 {
+	background: url("../../images/hr460.png") no-repeat scroll center center transparent;
+	clear:left;
+	height:5px;
+	margin:10px 0;
+	padding:0;
+	width:460px;
+}
+
 .hr280 {
   background: url("../../images/hr280.png") no-repeat scroll center center transparent;
   clear: right;
@@ -953,4 +963,77 @@ div.date {
 
 .item-list ul {
   list-style:disc inside none !important;
+}
+
+.date-container {
+	background: url("../../images/event-tape.png") no-repeat scroll center center transparent;
+	height: 118px;
+	width:200px;
+	display:table;
+	position:absolute;
+	left:57px;
+	margin-top:10px;
+}
+
+.event-date {
+    color: #C85A4D;
+    font-family: 'alfa slab one','cursive';
+    font-size: 36px;
+    line-height: 40px;
+    margin: -40px 10px auto 40px;
+    position: absolute;
+    width: 150px;
+	height:77px;
+	top:50%;
+    word-wrap: break-word;
+}
+
+.event-content {
+    float: right;
+    width: 460px;
+	margin-top:10px;
+}
+
+.event-title {
+	color: #222222;
+	font-family: 'Special Elite', cursive;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.map-link {
+	float:right;
+	background: url("../../images/map-sprite.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+	width:59px;
+	text-align:center;
+}
+
+.map-link div a {
+	color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 1px 1px #C8594C;
+    text-transform: uppercase;
+	font-size: 13px;
+    font-weight: 700;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.map-link:hover {
+	background: url("../../images/map-sprite.gif") no-repeat scroll 0 -32px transparent;
+}
+
+.event-content .location {
+	display:block;
+}
+
+.event-content .adr {
+	float:left;
 }
