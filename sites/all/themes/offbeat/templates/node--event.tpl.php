@@ -8,14 +8,24 @@
   $end_date_right = format_date($timestamp2, 'offbeat_date_full');
 
   print '<div class="date-container"><div class="event-date">';
-  print $start_date_left . '&#8211;' . $end_date_left;
+  if($content['field_event_date']['#items'][0]['value'] != $content['field_event_date']['#items'][0]['value2'] ) {
+    print $start_date_left . '&#8211;' . $end_date_left;
+
+  } else {
+    print $start_date_left;
+  }
+
   print '</div></div>';
 
   print '<div class="event-content">';
-  print '<div class="event-title">' . $title . '</div><br />';
-  print $start_date_right . ', ' . $end_date_right;
+  print '<div class="event-title">' . $title . '</div>';
+  if($content['field_event_date']['#items'][0]['value'] != $content['field_event_date']['#items'][0]['value2'] ) {
+    print $start_date_right . ' &#8211; ' . $end_date_right;
+  } else {
+    print $start_date_right;
+  }
+
   print '<div class="hr460"> </div>';
-  //todo: field template for location
   print render($content['field_event_location']);
   print '<div class="hr460"> </div>';
   print $content['body'][0]['#markup'];
