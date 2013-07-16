@@ -1,6 +1,5 @@
 <?php
 
-  print kpr($content);
   //get the start and end dates and format them
   $timestamp1 = strtotime($content['field_event_date']['#items'][0]['value']);
   $timestamp2 = strtotime($content['field_event_date']['#items'][0]['value2']);
