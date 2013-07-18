@@ -7,6 +7,7 @@
   $start_date_right = format_date($timestamp1, 'offbeat_date_full');
   $end_date_right = format_date($timestamp2, 'offbeat_date_full');
 
+
   print '<div class="date-container"><div class="event-date">';
   if($content['field_event_date']['#items'][0]['value'] != $content['field_event_date']['#items'][0]['value2'] ) {
     print $start_date_left . '&#8211;' . $end_date_left;

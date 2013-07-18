@@ -140,7 +140,7 @@ h4 {
 */
 .hr640 {
   background: url("../../images/hr640.png") no-repeat scroll center center transparent;
-  clear: left;
+  clear: both;
   height: 5px;
   padding-bottom: 20px;
   margin: 0;
@@ -1004,6 +1004,10 @@ div.date {
 	font-size: 16px;
 	font-weight: 400;
 	margin: 0;
+}
+
+.event-title a {
+	color: #222222 !important;
 }
 
 .map-link {
