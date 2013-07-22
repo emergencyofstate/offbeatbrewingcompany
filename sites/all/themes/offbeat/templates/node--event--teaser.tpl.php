@@ -26,7 +26,7 @@
   }
 
   print render($content['field_event_location']);
-  print '<div style="float: left;">' . $content['body']['#items'][0]['safe_value'] . '</div>';
+  //print '<div style="float: left;">' . $content['body']['#items'][0]['safe_value'] . '</div>';
   print '</div>';
   print '<div class="hr640"> </div>';
   print '</div>';
