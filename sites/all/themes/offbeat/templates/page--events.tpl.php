@@ -45,7 +45,6 @@
         <?php if ($title): ?>
           <h1 class="title" id="page-title"><?php print 'OFFBEAT Events'; ?></h1>
         <?php endif; ?>
-        <?php print '<div class="events-home"><a href="/events">Back to Events home</a></div>'; ?>
         <?php print $messages; ?>
          <?php print render($tabs); ?>
         <?php print render($page['help']); ?>
